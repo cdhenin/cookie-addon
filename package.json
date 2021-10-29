@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service build --mode development --watch",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start-server-mockup": "node engine/serverMockup.js"
   },
   "dependencies": {
     "@cliqz/adblocker-webextension": "^1.22.7",
