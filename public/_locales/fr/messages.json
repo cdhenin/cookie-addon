@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Au revoir les cookies"
+  },
+  "extensionDescription": {
+    "message": "Supprimez les bandeaux de consentements et bloquer les scripts indésirables."
+  },
+  "overview_styles_hidden": {
+    "message": "Des correctifs CSS ont été injectés pour cacher d'éventuels éléments indésirables",
+    "description": "item indiquant que des éléments CSS indésirables ont pu être cachés"
+  },
+  "overview_styles_not_hidden": {
+    "message": "Aucun correctif CSS n'a été injecté pour cacher d'éventuels éléments indésirables",
+    "description": "item indiquant que les correctifs CSS n'ont pas été injectés"
+  },
+  "overview_scripts_not_blocked": {
+    "message": "Des scripts tiers ont été détectés",
+    "description": "item indiquant que des scripts tiers  indésirables ont été détectés mais pas bloqués"
+  },
+  "overview_scripts_blocked": {
+    "message": "Des scripts tiers ont été bloqués",
+    "description": "item indiquant que des scripts tiers indésirables ont été détectés et bloqués"
+  },
+  "overview_no_script": {
+    "message": "Pas de scripts tiers détectés",
+    "description": "item indiquant qu'aucun scripts tiers indésirable n'a été détecté"
+  },
+  "overview_allow_scripts": {
+    "message": "Autoriser les scripts",
+    "description": "Titre de l'option permettant de désactiver le blocage des scripts tiers"
+  },
+  "overview_allow_styles": {
+    "message": "Autoriser les éléments CSS",
+    "description": "Titre de l'option permettant de désactiver la suppression d'éléments CSS indésirables"
+  },
+  "overview_disallow_scripts": {
+    "message": "Interdire les scripts",
+    "description": "Titre de l'option permettant d'activer le blocage des scripts tiers"
+  },
+  "overview_disallow_styles": {
+    "message": "Interdire les éléments CSS",
+    "description": "Titre de l'option permettant d'activer la suppression d'éléments CSS indésirables"
+  },
+  "overview_see_scripts": {
+    "message": "Voir les scripts",
+    "description": "Titre du bouton permettant de voir la liste des scripts détectés sur l'onglet courant"
+  },
+  "overview_see_styles": {
+    "message": "Qu'est-ce que c'est?",
+    "description": "Titre du bouton permettant d'afficher la description de la fonction d'insertion de CSS"
+  },
+
+  "overview_whatIsIt_styles": {
+    "message": "L'extension injecte dans les pages web visitées des feuilles de styles permettant de cacher les éléments CSS indésirables les plus connus.\n\nIl s'agit la plupart du temps des bannières de consentements aux cookies, ainsi que des zones d'affichage de publicité. \n\nCes bannières et zones de pub peuvent également être affichés sur certains sites par le biais de scripts, dans ce cas, c'est la partie « blocage des scripts » ci-dessous qui se charge de les cacher."
+  },
+
+  "scripts_purposes_advertising": { "message": "Publicité" },
+  "scripts_purposes_social_interaction": { "message": "Social" },
+  "scripts_purposes_analytics": { "message": "Analyse" },
+  "scripts_purposes_other": { "message": "Autres" },
+
+  "warning_refresh_title": { "message": "Actualiser l'onglet courant" },
+  "warning_refresh_text": { "message": "Actualiser la page pour lui appliquer la nouvelle configuration" },
+  
+  "warning_error_text": { "message": "Une erreur s'est produite lors du lancement du bloqueur en arrière-plan." },
+  "warning_error_title": { "message": "Redémarrer le plugin" },
+
+  "config_title": { "message": "Configuration" },
+  "warning_restart_title": { "message": "Redémarrer le plugin" },
+  "warning_restart_text": { "message": "Vous devez redémarrer le plugin pour que la modification soit prise en compte" },
+  "config_deactivated": { "message": "L'extension est désactivée." },
+  "config_activated": { "message": "L'extension est activée." },
+  "activate": { "message": "Activer" },
+  "deactivate": { "message": "Désactiver" },
+  "restart_plugin_text": { "message": "Redémarrer l'extension"},
+  "restart_plugin_button": { "message": "Redémarrer"}
+}
