@@ -12,7 +12,7 @@ import {
 import { pullAllWith } from 'lodash';
 import Blocker from './Blocker';
 
-const RESOURCE_URL = 'https://github.com/cdhenin/cookie-addon/-/raw/master/engine/lists/';
+const RESOURCE_URL = 'https://raw.githubusercontent.com/cdhenin/cookie-addon/master/engine/lists/';
 const RULES_LIST = [
   ...fullLists,
   `${RESOURCE_URL}/networkAdvertising.txt`,
