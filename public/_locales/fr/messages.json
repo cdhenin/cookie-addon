@@ -25,20 +25,20 @@
     "message": "Pas de scripts tiers détectés",
     "description": "item indiquant qu'aucun scripts tiers indésirable n'a été détecté"
   },
-  "overview_allow_scripts": {
-    "message": "Autoriser les scripts",
+  "overview_disallow_scripts": {
+    "message": "Scripts interdits",
     "description": "Titre de l'option permettant de désactiver le blocage des scripts tiers"
   },
-  "overview_allow_styles": {
-    "message": "Autoriser les éléments CSS",
+  "overview_disallow_styles": {
+    "message": "Éléments CSS bloqués",
     "description": "Titre de l'option permettant de désactiver la suppression d'éléments CSS indésirables"
   },
-  "overview_disallow_scripts": {
-    "message": "Interdire les scripts",
+  "overview_allow_scripts": {
+    "message": "Scripts autorisés",
     "description": "Titre de l'option permettant d'activer le blocage des scripts tiers"
   },
-  "overview_disallow_styles": {
-    "message": "Interdire les éléments CSS",
+  "overview_allow_styles": {
+    "message": "Éléments CSS autorisés",
     "description": "Titre de l'option permettant d'activer la suppression d'éléments CSS indésirables"
   },
   "overview_see_scripts": {
