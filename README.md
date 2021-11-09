@@ -6,6 +6,8 @@ Ce projet est une extension de navigateur, compatible avec Chrome et Firefox et 
 
 La popup de l'extension permet de voir quels scripts ont été détectés et d'autoriser ou d'interdire, pour chaque site visité, le blocage des scripts indésirable et l'injection de feuilles de styles visant à cacher les éléments qui entrave la navigation.
 
+![Capture](/install/Screenshot.png)
+
 ## Installation de l'extension
 
  Voir dossier [install](/install)
