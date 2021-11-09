@@ -60,6 +60,8 @@ class Blocker extends WebExtensionBlocker {
       return {};
     }
 
+    if (request.isFirstParty) { return {}; }
+
     const { redirect, match, filter } = this.match(request);
     const { domain, hostname, tabId } = request;
 
