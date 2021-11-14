@@ -74,14 +74,13 @@ class Blocker extends WebExtensionBlocker {
 
     if (hasMatched) {
       const script = {
-        tabId,
         isBlocked,
         name: domain,
         id: hostname,
         mainDomain: hostname,
         mainPurpose: getPurpose(filter),
       };
-      store.dispatch('addDetectedScript', script);
+      store.dispatch('addDetectedScript', { tabId, script });
     }
 
     if (!isBlocking) { return {}; }

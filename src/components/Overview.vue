@@ -67,6 +67,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
+import { SET_SCRIPTS, SET_STYLES } from '../store/domains';
 import { reloadTabNoCache } from '../helpers/tabs';
 import translate from '../helpers/translate';
 import ScriptItem from './ScriptItem.vue';
@@ -89,7 +90,7 @@ export default {
   computed: {
     ...mapGetters([
       'getDetectedScriptsForCurrentTab',
-      'getCountOfBlockedScriptsForTab',
+      'getCountOfBlockedScriptsCurrentForTab',
       'allowedScriptsDomains',
       'allowedStylesDomains',
     ]),
@@ -106,7 +107,7 @@ export default {
           text: translate('overview_no_script'),
         };
       }
-      if (this.getCountOfBlockedScriptsForTab > 0) {
+      if (this.getCountOfBlockedScriptsCurrentForTab > 0) {
         return {
           emoji: '👩‍✈',
           text: translate('overview_scripts_blocked'),
@@ -130,8 +131,8 @@ export default {
       };
     },
     allowedScriptsDomainsModel: {
-      set() {
-        this.toggleDomainForScripts(this.currentHostname);
+      set(newValue) {
+        this.applyMutation({ mutation: SET_SCRIPTS, payload: { value: newValue } });
         this.openWarningNotification();
       },
       get() {
@@ -139,8 +140,8 @@ export default {
       },
     },
     allowedStylesDomainsModel: {
-      set() {
-        this.toggleDomainForStyles(this.currentHostname);
+      set(newValue) {
+        this.applyMutation({ mutation: SET_STYLES, payload: { value: newValue } });
         this.openWarningNotification();
       },
       get() {
@@ -149,7 +150,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(['toggleDomainForScripts', 'toggleDomainForStyles']),
+    ...mapActions(['applyMutation']),
     translate,
     toggleDisplayScripts() {
       this.displayScripts = !this.displayScripts;

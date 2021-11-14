@@ -31,7 +31,6 @@ loadStorage().finally(() => {
         // Reset counter if tab is reloaded
         browser.tabs.onUpdated.addListener((tabId, { status }) => {
           if (status === 'loading') {
-            updateBadgeValue(tabId, 0);
             store.dispatch('clearDetectedScriptsForTab', tabId);
           }
         });
