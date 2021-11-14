@@ -45,5 +45,10 @@
       ],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "update_url": "https://github.com/cdhenin/cookie-addon/updates.json"
+    }
+  }
 }

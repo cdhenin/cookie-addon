@@ -109,7 +109,7 @@ export default {
       }
       if (this.getCountOfBlockedScriptsCurrentForTab > 0) {
         return {
-          emoji: '👩‍✈',
+          emoji: '👩‍🏭',
           text: translate('overview_scripts_blocked'),
         };
       }

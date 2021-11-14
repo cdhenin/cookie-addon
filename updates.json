@@ -1,0 +1,12 @@
+{
+    "addons": {
+      "{8dd33bb7-6f44-451f-b353-8819594f2943}": {
+        "updates": [
+          {
+            "version": "0.1.1",
+            "update_link": "https://github.com/cdhenin/cookie-addon/install/au_revoir_les_cookies-0.1.1-an+fx.xpi"
+          }
+        ]
+      }
+    }
+  }
